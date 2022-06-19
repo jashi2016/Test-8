@@ -1,0 +1,42 @@
+1.An array is given, return the sum of all the positives numbers. const input = [ 1, -5, 2, 10, -30, 29, 50];
+const input = [ 1, -5, 2, 10, -30, 29, 50];
+var sum = 0;
+ input.forEach(a => {
+ if(a>0){
+ sum+=a;
+ }
+    });
+ console.log(sum);x
+ 
+ 
+ 2. Multiple records of people are given, you have to print the first name and last name . let friends = [           {fname: 'Rachal', lname:"Green" ,id: 1, marks : 98 },          {fname: 'Ross',lname:"Geller" , id: 2, marks : 23 },          {fname: 'Monica ',lname:"Geller" , id: 3, marks : 75 },          {fname: 'Joey',lname:" Tribbiani" , id: 4, marks : 46 },          {fname: 'Chandler  ',lname:"Bing" , id: 5, marks : 78 },          {fname: 'Phoebe',lname:"Buffay" , id: 6, marks : 45 }           ]
+ let friends = [           {fname: 'Rachal', lname:"Green" ,id: 1, marks : 98 },          {fname: 'Ross',lname:"Geller" , id: 2, marks : 23 },          {fname: 'Monica ',lname:"Geller" , id: 3, marks : 75 },          {fname: 'Joey',lname:" Tribbiani" , id: 4, marks : 46 },          {fname: 'Chandler  ',lname:"Bing" , id: 5, marks : 78 },          {fname: 'Phoebe',lname:"Buffay" , id: 6, marks : 45 }           ]
+let names = (friends).map(({ fname, lname }) => {
+  return {'firstname': fname, 'lastname': lname}
+});
+
+console.log(names)
+
+
+
+
+3.You are given some names of different cities and a ordered list html element; add a list item for each to the ordered list.   city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ]; 
+<html>
+<body>
+<div >
+<ol id="listing">
+</ol>
+</div>
+<script>
+city = ['Delhi', 'Mumbai', 'Jaipur','Kolkata','Indore' ];
+for (i = 0; i < city.length; i++) {
+var cur_element=city[i];
+var para = document.createElement("li");
+var node = document.createTextNode(cur_element);
+para.appendChild(node);
+var element = document.getElementById("listing");
+element.appendChild(para);
+}
+</script>
+</body>
+</html>
